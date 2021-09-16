@@ -1,0 +1,101 @@
+body {
+  background: #e5e5e5;
+  font-family: "Poppins", sans-serif;
+}
+
+.title-row {
+  display: flex;
+  height: 10vh;
+  background-color: #fff;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_content {
+  flex: 1;
+  color: #6070ff;
+  align-items: center;
+  padding: 20px;
+}
+
+#logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#nav {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: right;
+  padding: 15px;
+}
+
+.main-section {
+  display: flex;
+  height: 90vh;
+  border-bottom-left-radius: 50px 50px;
+  background-image: url(../images/header-shapes.png);
+  background-color: #fff;
+  align-items: center;
+}
+
+.firstpage {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.welcome {
+  margin: 6px;
+  width: 80%;
+}
+
+@media only screen and (max-width: 640px) {
+  .welcome {
+    width: 95%;
+  }
+
+  h4 {
+    width: 95%;
+  }
+
+  #greeting {
+    width: 95%;
+  }
+}
+
+#welc_title {
+  font-size: 48px;
+  color: #172b4d;
+  line-height: 130%;
+  font-weight: bold;
+  margin: 6px;
+}
+
+#welc_artic {
+  font-size: 24px;
+  color: #344563;
+  line-height: 125%;
+  margin: 6px;
+}
+
+h4 {
+  color: #172b4d;
+  margin: 6px;
+}
+
+#greeting {
+  display: flex;
+  margin: 6px;
+}
+
+li {
+  list-style: none;
+  padding-left: 15px;
+}
+
+a:visited {
+  color: #6070ff;
+}
