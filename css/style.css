@@ -1,6 +1,6 @@
 body {
   background: #e5e5e5;
-  font-family: sans-serif;
+  font-family: Poppins;
 }
 
 .title-row {
@@ -29,6 +29,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   text-align: right;
+  padding: 15px;
 }
 
 .main-section {
@@ -93,4 +94,8 @@ h4 {
 li {
   list-style: none;
   padding-left: 15px;
+}
+
+a:visited {
+  color: #6070ff;
 }
