@@ -52,7 +52,6 @@ body {
 }
 
 @media only screen and (max-width: 640px) {
-
   .welcome {
     width: 95%;
   }
@@ -68,10 +67,10 @@ body {
 
 #welc_title {
   font-size: 48px;
-  color:#172b4d;
+  color: #172b4d;
   line-height: 130%;
   font-weight: bold;
-  margin:6px;
+  margin: 6px;
 }
 
 #welc_artic {
