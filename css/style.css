@@ -120,13 +120,31 @@ a:hover {
 }
 
 .picture {
-  max-height: 220px;
   grid-row: span 2;
   display: flex;
-  margin-inline: 10px;
   justify-content: center;
-  align-items: center;
   padding-right: 10px;
+}
+
+span {
+  background-image: url(../images/Portf1.png);
+  box-sizing: border-box;
+  height: 45vh;
+  width: 110%;
+  background-repeat: no-repeat;
+  padding: 150px;
+}
+
+#second {
+  background-image: url(../images/Portf2.png);
+}
+
+#third {
+  background-image: url(../images/Portf3.png);
+}
+
+#fourth {
+  background-image: url(../images/Portf3.png);
 }
 
 .works {
