@@ -1,6 +1,7 @@
-# Portfolio-setup-and-mobile-version-skeleton
-Mobile version first 3 sections
+# Portfolio-mobile-version
+Mobile version
 ![](images\portfolio1.png)
+![](images\mobile-detail.png)
 
 ### Build with   
    * HTML
