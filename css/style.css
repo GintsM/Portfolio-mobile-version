@@ -104,10 +104,8 @@ a:visited {
 :any-link {
   text-decoration: none;
 }
-/* Second part Mobile-detail */
 
 .card {
-  border: 2px solid red;
   display: grid;
   grid-template-columns: repeat(2, 360px);
   grid-template-rows: repeat(2, 360px);
@@ -119,7 +117,6 @@ a:visited {
 .picture {
   max-height: 220px;
   grid-row:span 2;
-  border: 1px dotted rebeccapurple;
   display: flex; 
   margin-inline: 10px;
 }
@@ -129,42 +126,34 @@ a:visited {
   flex-direction: column;
   flex-wrap: wrap;
   grid-row: span 2;
-  border: 1px solid rebeccapurple;
   padding-bottom: 30px;
 }
 
 @media only screen and (max-width: 630px){
   .card {
-    border: 2px solid blue;
     grid-template-columns: 360px;
     grid-template-rows: repeat(2, 1fr);
-  }
-  .picture {
-    border: 1px solid green;
-  }
-  
-  .works {
-    border: 1px solid green;
   }
 }
 
 h2 {
   margin-block: 2px;
   padding: 12px;
+  font-size: 40px;
 }
 
 ul {
   font-weight: bold;
   display: flex;
-  margin-block: 2px; 
+  margin-block: 2px;
   padding-inline-start: 0px;
 }
 
-.cover :first-child{
+.cover :first-child {
   padding-right: 15px;
 }
 
-.cover :nth-last-child(-n+2){
+.cover :nth-last-child(-n+2) {
   color: #7a869a;
   list-style: disc;
   flex:1;
@@ -172,11 +161,11 @@ ul {
   margin-left: 20px;
 }
 
-article{
+article {
   padding: 12px;
 }
 
-p{
+p {
   margin-block: 2px;
   font-size: 15px;
 }
@@ -185,7 +174,7 @@ p{
   width: 85%;
 }
 
-.buttn{
+.buttn {
   padding-inline-start: 12px;
 }
 
@@ -194,12 +183,13 @@ p{
   background-color: #ebebff;
   border-radius: 8px;
   text-align: center;
-  padding: 4px; 
+  padding: 4px;
   margin-right: 8px;
   padding-left: 12px;
   padding-right: 12px;
 }
-.prLnk{
+
+.prLnk {
   color: #396df2;
   margin-left: 10px;
   margin-top: 12px;
@@ -209,4 +199,113 @@ p{
   padding: 12px;
   font-weight: 500;
   width: 124px;
+}
+
+.about {
+  display: grid;
+  background-color: #fff;
+  width: 107%;
+  margin-top: 40px;
+  border-top-right-radius: 50px 50px;
+  margin-inline-start: -6px;
+}
+
+.aboutdescr {
+  display: flex;
+  flex-direction: column;
+}
+
+#abh2 {
+  padding-left: 0px;
+  line-height: 52px;
+}
+
+.textab {
+  width: 75%;
+}
+
+#footconect {
+  padding-left: 6px;
+}
+
+.skills {
+  flex-direction: column;
+}
+
+.sklist {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 75%;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.skills :first-child {
+  border-bottom: unset;
+}
+
+.lngnames {
+  flex-direction: column;
+}
+
+.lngslid {
+  width: 50%;
+  background-color: #f7f7f9;
+  padding: 12px;
+  padding-left: 65px;
+  margin: 4px;
+  margin-inline-start: 12px;
+  border-radius: 5px;
+}
+
+#js {
+  background-image: url(../images/JS.png);
+  background-repeat: no-repeat;
+}
+
+#hm {
+  background-image: url(../images/HTML.png);
+  background-repeat: no-repeat;
+}
+
+#cs {
+  background-image: url(../images/CSS.png);
+  background-repeat: no-repeat;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #6070ff;
+  background-image: url(../images/contact.png);
+  border-top-left-radius: 50px 50px;
+  width: 100%;
+  padding-bottom: 45px;
+}
+
+#cont {
+  color: #fff;
+  width: 75%;
+}
+
+#conttext {
+  color: #fff;
+}
+
+.input {
+  border-radius: 8px;
+  width: 74%;
+  padding: 12px;
+  margin-left: 6px;
+}
+
+#getIt {
+  color: #396df2;
+  margin-left: 10px;
+  margin-top: 12px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 12px;
+  font-weight: 500;
+  width: 124px;
+  background-color: #fff;
 }
