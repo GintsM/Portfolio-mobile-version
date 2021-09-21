@@ -177,10 +177,12 @@
         <p class="textab" id="conttext">If you have an application you are intrested in developing, a feature that you need built or 
           a project that needs coding. I'd love to help with it</p>
       </article>
-      <input class="input" type="text" value="John">
-      <input class="input" type="email" value="john@gmail.com">
-      <textarea class="input" cols="30" rows="10">Write your message here</textarea>
-      <a id="getIt" href="" class="prLnk">Get It Touch</a>
+      <form action="https://formspree.io/f/xnqlwozn" method="POST">
+        <input class="input" type="text" placeholder="John" size="30" required>
+        <input class="input" type="email" placeholder="john@gmail.com" required>
+        <textarea class="input" cols="30" rows="10" placeholder="Write your message here" maxlength="500" required></textarea>
+        <button id="getIt" type="submit">Get It Touch</button>
+      </form>
     </footer>
   </section>
 </body>
