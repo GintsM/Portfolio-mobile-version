@@ -49,7 +49,7 @@ body {
 
 .welcome {
   margin: 6px;
-  width: 80%;
+  width: 95%;
 }
 
 #welc_title {
@@ -71,11 +71,13 @@ h4 {
   color: #172b4d;
   margin: 6px;
   padding: 18px;
+  width: 95%;
 }
 
 #greeting {
   display: flex;
   margin: 6px;
+  width: 95%;
 }
 
 li {
@@ -97,8 +99,9 @@ a:hover {
 
 .card {
   display: grid;
-  grid-template-columns: repeat(2, 380px);
-  grid-template-rows: repeat(2, 380px);
+  grid-template-columns: 360px;
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
   background-color: #fff;
   border-radius: 24px;
   margin-top: 100px;
@@ -228,8 +231,9 @@ p {
 }
 
 .textab {
-  width: 75%;
-  padding-left: 24px;
+  width: 90%;
+  padding-left: 12px;
+  text-align: center;
 }
 
 #footconect {
@@ -288,12 +292,14 @@ footer {
   border-top-left-radius: 50px 50px;
   width: 100%;
   padding-bottom: 45px;
+  padding-top: 100px;
   margin-top: 40px;
 }
 
 #cont {
   color: #fff;
   width: 75%;
+  margin: 0 auto;
 }
 
 #conttext {
@@ -305,6 +311,8 @@ footer {
   width: 74%;
   padding: 12px;
   margin-left: 30px;
+  margin-bottom: 24px;
+  border: 1px solid #cfd8dc;
 }
 
 #getIt {
@@ -317,4 +325,10 @@ footer {
   font-weight: 500;
   width: 124px;
   background-color: #fff;
+  border: 1px solid #cfd8dc;
+}
+
+textarea {
+  resize: none;
+  border: 1px solid #cfd8dc;
 }
