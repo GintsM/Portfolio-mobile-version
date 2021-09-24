@@ -88,7 +88,12 @@ a:visited {
 }
 
 a:hover {
-  background-color: #396df2;
+  background-color: pink;
+  transform: rotate(45deg) translateX(180px);
+}
+
+i:hover {
+  transform: rotate(45deg);
 }
 
 :any-link {
