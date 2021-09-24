@@ -1,13 +1,13 @@
 # Portfolio-mobile-version
-Mobile version
+Mobile and Desktop version
     <p align="center">
-     <img src="images/portfolio1.png" alt="Form" />
+     <img src="images/desk_main.png" alt="" />
     </p>
         <p align="center">
-     <img src="images/mobile-detail.png" alt="Form" />
+     <img src="images/desk_cont.png" alt="Form" />
     </p>
         <p align="center">
-     <img src="images/contactscreen.png" alt="Form" />
+     <img src="images/mob_card.png" alt="Form" />
     </p>
 
 
