@@ -2,3 +2,6 @@ node_module
 .stylelintrc.json
 .hintrc
 LICENSE
+index.html
+style.css
+mobile.css

@@ -15,7 +15,7 @@ header {
   }
   
   main {
-    background-image: url(../img/header-shapes.png);
+    background-image: url(../images/header-shapes.png);
     background-size: contain;
     border-bottom-left-radius: 70px 70px;
   }
@@ -128,7 +128,7 @@ header {
   }
   
   footer {
-    background-image: url(../img/contact.png);
+    background-image: url(../images/contact.png);
     background-position: 86% 12%;
     background-size: contain;
     border-top-right-radius: 70px 70px;

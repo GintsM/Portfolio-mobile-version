@@ -56,7 +56,7 @@ li {
 
 main {
   background-color: #fff;
-  background-image: url(../img/Headerbg.png);
+  background-image: url(../images/Headerbg.png);
   background-size: 95%;
   background-repeat: no-repeat;
   background-position: 31%;
@@ -176,7 +176,7 @@ form {
 }
 
 #hand {
-  background-image: url(../img/hand-cur.png);
+  background-image: url(../images/hand-cur.png);
   background-repeat: no-repeat;
   background-position: 90% 20%;
 }
@@ -256,15 +256,15 @@ span {
 }
 
 #js {
-  background-image: url(../img/JS.png);
+  background-image: url(../images/JS.png);
 }
 
 #hm {
-  background-image: url(../img/HTML.png);
+  background-image: url(../images/HTML.png);
 }
 
 #cs {
-  background-image: url(../img/CSS.png);
+  background-image: url(../images/CSS.png);
 }
 
 .underline {
@@ -275,7 +275,7 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: #6070ff;
-  background-image: url(../img/contact_background_shapes.png);
+  background-image: url(../images/contact_background_shapes.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: 26%;
