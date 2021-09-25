@@ -14,12 +14,6 @@ h3 {
   display: block;
 }
 
-main {
-  background-image: url(../images/header-shapes.png);
-  background-size: contain;
-  border-bottom-left-radius: 70px 70px;
-}
-
 #main-section {
   margin: 39% 7%;
 }
@@ -74,19 +68,16 @@ h2 {
 }
 
 .aboutme {
-  grid-template-rows: repeat(2, 1fr);
   grid-template-columns: 340px;
   border-top-right-radius: 70px 70px;
-  height: 150vh;
 }
 
 .abouttxt {
   padding-left: 0;
   grid-column: auto;
   width: 89%;
-  margin-left: 24px;
   margin-bottom: 0;
-  height: 65vh;
+  margin-left: 24px;
 }
 
 .abouttxt :nth-child(3) {
@@ -98,7 +89,7 @@ h2 {
 }
 
 #aboutarttxt {
-  margin: 12px auto;
+  margin: 12px 0;
 }
 
 #aboutlang {
@@ -132,7 +123,6 @@ footer {
   background-position: 86% 12%;
   background-size: contain;
   border-top-right-radius: 70px 70px;
-  margin-top: -100px;
 }
 
 .contact {
