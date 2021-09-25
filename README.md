@@ -32,6 +32,9 @@ Clone the repository to your locaL machine. Enter your github credentials if pro
 
 Open the index.html file with the browser of your preference.
 
+### Live
+
+you can see it here https://gintsm.github.io/Portfolio-mobile-version/
 
 ### 👤 Author1
     * Github: GintsM 
