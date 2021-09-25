@@ -15,8 +15,6 @@ Mobile and Desktop version
    * HTML
    * CSS
 
-## Live Demo
-To see the live Demo of the project click [here](https://github.com/GintsM/Portfolio-mobile-version/)
 
 ### Getting Started
 * Prerequisites Create an account on github
@@ -36,12 +34,12 @@ Open the index.html file with the browser of your preference.
 
 
 ### 👤 Author1
-    * Github: @GintsM 
-    * Twitter: @GintsMisins
+    * Github: GintsM 
+    * Twitter: GintsMisins
 
 ### 👤 Author2
-    * Github: @Meri-MG 
-    * Linkedin: Meri 
+    * Github : Meri-MG 
+
 ### Show your support
 Give a ⭐️ if you like this project!
 ### 📝 License
