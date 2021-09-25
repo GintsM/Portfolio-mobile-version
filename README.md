@@ -1,13 +1,13 @@
 # Portfolio-mobile-version
-Mobile version
+Mobile and Desktop version
     <p align="center">
-     <img src="images/portfolio1.png" alt="Form" />
+     <img src="images/desk_main.png" alt="" />
     </p>
         <p align="center">
-     <img src="images/mobile-detail.png" alt="Form" />
+     <img src="images/desk_cont.png" alt="Form" />
     </p>
         <p align="center">
-     <img src="images/contactscreen.png" alt="Form" />
+     <img src="images/mob_card.png" alt="Form" />
     </p>
 
 
@@ -15,8 +15,6 @@ Mobile version
    * HTML
    * CSS
 
-## Live Demo
-To see the live Demo of the project click [here](https://github.com/GintsM/Portfolio-mobile-version/)
 
 ### Getting Started
 * Prerequisites Create an account on github
@@ -36,12 +34,12 @@ Open the index.html file with the browser of your preference.
 
 
 ### 👤 Author1
-    * Github: @GintsM 
-    * Twitter: @GintsMisins
+    * Github: GintsM 
+    * Twitter: GintsMisins
 
 ### 👤 Author2
-    * Github: @Meri-MG 
-    * Linkedin: Meri 
+    * Github : Meri-MG 
+
 ### Show your support
 Give a ⭐️ if you like this project!
 ### 📝 License
