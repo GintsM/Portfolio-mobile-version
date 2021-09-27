@@ -21,6 +21,20 @@ h3 {
   color: #6070ff;
 }
 
+#spin {
+  display: inline-block;
+  margin-left: 0;
+  color: #fff;
+  background-color: #396df2;
+  animation: sk-rotate 10.0s infinite linear;
+  position: absolute;
+  border-radius: 100%;
+}
+
+@keyframes sk-rotate {
+  100% { transform: rotate(360deg);}
+}
+
 nav {
   flex: 2;
   display: flex;
