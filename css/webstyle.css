@@ -26,13 +26,15 @@ h3 {
   margin-left: 0;
   color: #fff;
   background-color: #396df2;
-  animation: sk-rotate 10.0s infinite linear;
+  animation: sk-rotate 10s infinite linear;
   position: absolute;
   border-radius: 100%;
 }
 
 @keyframes sk-rotate {
-  100% { transform: rotate(360deg);}
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 nav {
