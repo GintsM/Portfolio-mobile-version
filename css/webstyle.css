@@ -32,7 +32,8 @@ h3 {
 }
 
 @keyframes sk-rotate {
-  100% { transform: rotate(360deg);
+  100% {
+    transform: rotate(360deg);
   }
 }
 
