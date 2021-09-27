@@ -39,6 +39,9 @@ Open the index.html file with the browser of your preference.
 ### 👤 Author2
     * Github : Meri-MG 
 
+### Live Demo
+
+> To see the live Demo of the project click [here](https://gintsm.github.io/Portfolio-mobile-version/)
 
 ### Show your support
 Give a ⭐️ if you like this project!
