@@ -44,18 +44,10 @@ nav {
   margin-right: 10%;
 }
 
-.hide {
-  display: flex;
-}
-
 ul {
   display: flex;
   padding-inline-start: 0;
   align-self: stretch;
-}
-
-ul :first-child {
-  padding-inline-start: 0;
 }
 
 li {
