@@ -18,4 +18,4 @@ const menbt = document.querySelector('.menbtn');
 menbt.addEventListener('click', toogleF);
 
 const navitms = document.querySelectorAll('.navitm');
-navitms.forEach(navitm => (navitm.addEventListener('click', toogleF)));
+navitms.forEach((navitm) => (navitm.addEventListener('click', toogleF)));
