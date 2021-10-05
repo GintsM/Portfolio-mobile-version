@@ -24,11 +24,14 @@
     <h3 id="spin">GintsM</h3>
     <nav>
       <ul class="hide">
-        <li>Portfolio</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li> <a class="navitm"  href="#portfolio">Portfolio</a></li>
+        <li> <a class="navitm" href="#about">About</a></li>
+        <li> <a class="navitm" href="#contact">Contact</a></li>
       </ul>
-      <a id="hamb" href=""><i class="fa fa-bars"></i></a>
+      <button class="menbtn">
+        <i class="hamb fa fa-bars"></i>
+        <i class="close">X</i>
+      </button>           
     </nav>
   </header>
   <main>
@@ -59,7 +62,7 @@
       </ul>
     </section>
   </main>
-  <section class="card">
+  <section id="portfolio" class="card">
     <figure>
       <img src="images/Snap1.png" alt="">
     </figure>
@@ -158,7 +161,7 @@
       </form>      
     </div>
   </section> 
-  <section class="aboutme">
+  <section id="about" class="aboutme">
     <div class="abouttxt">
       <article>
         <h2 id="abtitle">About<br>Myself</h2>
@@ -199,7 +202,7 @@
       <h6 class="underline">Skills <span>></span></h6>
     </figure>    
     <footer>
-      <article class="contact">
+      <article id="contact" class="contact">
         <h5>Contact me</h5>
         <p id="conttext">If you have an application you are intrested in developing, a feature that you need built or 
           a project that needs coding. I'd love to help with it</p>
@@ -211,6 +214,7 @@
         <button id="getIt" type="submit">Get It Touch</button>
       </form>      
     </footer>
-  </section> 
+  </section>
+  <script src="script.js"></script> 
 </body>
 </html>
