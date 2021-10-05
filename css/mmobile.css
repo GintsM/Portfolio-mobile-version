@@ -7,7 +7,7 @@ h3 {
 }
 
 .hide {
-  position:fixed;
+  position: fixed;
   display: block;
   transform: translateY(-100%);
   transition: transform 1s;
@@ -46,6 +46,7 @@ h3 {
   background: none;
   z-index: 100;
 }
+
 .hamb {
   display: block;
 }
