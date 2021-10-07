@@ -356,3 +356,38 @@ textarea::placeholder {
   margin-bottom: 8%;
   width: 140px;
 }
+
+:any-link {
+  text-decoration: none;
+}
+
+.popup {
+  display: none;
+}
+
+.show {
+  display: flex;
+  position: absolute;
+  width: 80%;
+  margin: 2% 8% 2% 8%;
+  padding: 1%;
+  left: 0;
+  top: 0;
+  border: 3px dotted rebeccapurple;
+  background-color: #fff;  
+}
+
+.popimg {
+  width: 50%;
+  align-self: center
+}
+
+.articpop {
+  display: flex;
+}
+
+.closeButton {
+  cursor: pointer;
+  position: absolute;
+  right: 12%;
+}
