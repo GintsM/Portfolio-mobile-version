@@ -109,6 +109,11 @@ h2 {
   background-image: none;
 }
 
+button {
+  font-weight: 400;
+  border: 1px solid #6070ff;
+}
+
 .aboutme {
   grid-template-columns: 340px;
   border-top-right-radius: 70px 70px;
@@ -186,4 +191,26 @@ h5 {
 .input {
   width: 79%;
   border-radius: 8px;
+}
+
+.popup {
+  padding-top: 5%;
+}
+
+.popup > ul:nth-child(2) {
+  margin: 3.5% 0;
+}
+
+.articpop > div:nth-child(2) > ul:nth-child(1) {
+  margin: 0 0;
+  width: 80%;
+}
+
+.livebuttons {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.popbuttons {
+  margin: 7% 2% 3% 2%;
 }

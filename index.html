@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJ7ZRQS52V"></script>
-<script>
+  <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){window.dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-YJ7ZRQS52V');
-</script>
+  </script>
+  <!-- <script src="https://use.fontawesome.com/52f1b3ca6a.js"></script> -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <title>GintsMisins Portfolio</title>
   <link rel="stylesheet" href="css/webstyle.css">
   <link rel="stylesheet" media="screen and (max-width: 500px)" href="css/mmobile.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
         <li> <a class="navitm" href="#about">About</a></li>
         <li> <a class="navitm" href="#contact">Contact</a></li>
       </ul>
-      <button class="menbtn">
+      <button type="button" class="menbtn">
         <i class="hamb fa fa-bars"></i>
         <i class="close">X</i>
       </button>           
@@ -82,7 +82,7 @@
         <li class="languages">javaScript</li>
       </ul>
       <form>
-        <button type="submit">See Project</button>
+        <button type="button" class="clickPop" id="firstbutton">See Project</button>
       </form> 
     </div>
   </section>
@@ -106,8 +106,8 @@
         <li class="languages">css</li>
         <li class="languages">javaScript</li>
       </ul>
-      <form action="portf.html">
-        <button type="submit">See Project</button>
+      <form>
+        <button type="button" class="clickPop" id="secondButton">See Project</button>
       </form>
     </div>   
   </section>
@@ -131,8 +131,8 @@
         <li class="languages">css</li>
         <li class="languages">javaScript</li>
       </ul>
-      <form id="hand" action="portf.html">
-        <button type="submit">See Project</button>
+      <form id="hand">
+        <button type="button" class="clickPop" id="thirdButton">See Project</button>
       </form>
     </div>
   </section>
@@ -156,8 +156,8 @@
         <li class="languages">css</li>
         <li class="languages">javaScript</li>
       </ul>
-      <form action="portf.html">
-        <button type="submit">See Project</button>
+      <form>
+        <button type="button" class="clickPop" id="fourthButton">See Project</button>
       </form>      
     </div>
   </section> 
@@ -188,7 +188,7 @@
         </li>
       </ul>
       <form action="portf.html">
-        <button id="getbutton" type="submit">Get my Resume</button>
+        <button id="getbutton" type="button">Get my Resume</button>
       </form>
     </div>
     <figure id="aboutlang">
@@ -215,7 +215,7 @@
       </form>      
     </footer>
   </section>
-  <script src="script.js" async></script>
+  <!-- <script src="script.js" async></script> -->
   <script src="card.js" async></script>
 </body>
 </html>
