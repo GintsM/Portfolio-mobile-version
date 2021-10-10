@@ -373,6 +373,8 @@ textarea::placeholder {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 3% 4%;
   z-index: 100;
+  width: 100%;
+  justify-self: center;
 }
 
 .popup {
@@ -418,7 +420,6 @@ li.expierpop:nth-child(2) {
   .articpop {
     grid-template-columns: 50% auto;
   }
-
 }
 
 .articpop > p:nth-child(1) {
@@ -477,7 +478,6 @@ li.expierpop:nth-child(2) {
   .livebuttons {
     width: 91%;
   }
-
 }
 
 .popbuttons {
