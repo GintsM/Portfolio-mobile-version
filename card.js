@@ -9,40 +9,38 @@ function Card (title, expierence, image,) {
     Fames ac turpis egestas integer eget aliquet nibh praesent \
     tristique. Egestas diam in arcu cursus euismod quis viverra \
     nibh. Nisl rhoncus mattis rhoncus urna neque. Non tellus orci\
-    ac auctor augue mauris augue.'
+    ac auctor augue mauris augue.';
   this.languages = {
     1: 'html',
     2: 'css',
     3: 'javaScript',
     4: 'github',
     5: 'ruby',
-    6: 'Bootstrap'
+    6: 'Bootstrap',
   };
   this.links = {
     1: 'See Live',
     2: 'See Source',
-  }
-};
+  };
+}
 
-const card1 = new Card('Tonic', ['CANOPY','Back End Dev','2021'],'images/Snap1.png');
-const card2 = new Card('MULTI-POST STORIES', ['FACEBOOK','Fullstack Dev','2021'],'images/Snap2.png');
-const card3 = new Card('Facebook 360', ['FACEBOOK','Fullstack Dev','2021'],'images/Snap3.png');
-const card4 = new Card('UBER NAVIGATION', ['UBER','Lead Developer','2021'],'images/Snap4.png');
+const card1 = new Card('Tonic', ['CANOPY', 'Back End Dev', '2021'], 'images/Snap1.png');
+const card2 = new Card('MULTI-POST STORIES', ['FACEBOOK','Fullstack Dev', '2021'], 'images/Snap2.png');
+const card3 = new Card('Facebook 360', ['FACEBOOK', 'Fullstack Dev', '2021'], 'images/Snap3.png');
+const card4 = new Card('UBER NAVIGATION', ['UBER', 'Lead Developer', '2021'], 'images/Snap4.png');
 
 const cardList = [card1, card2, card3, card4];
-const selectorList = [ '#portfolio','section.card.ko','section.card.ro', 'section.card.last'];
+const selectorList = [ '#portfolio', 'section.card.ko', 'section.card.ro', 'section.card.last'];
 
 for (let num = 0; num < cardList.length; num++) {
 
   const popup1 = document.querySelector(selectorList[num]);
-  
   const modalContainer = document.createElement('div');
   popup1.appendChild(modalContainer);
   modalContainer.classList.add('hidden');
   const div = document.createElement('div');
   modalContainer.appendChild(div);
-  div.classList.add('popup');
-  
+  div.classList.add('popup');  
   const h2 = document.createElement('h2');
   div.appendChild(h2);
   h2.innerHTML = cardList[num].title;
@@ -55,42 +53,37 @@ for (let num = 0; num < cardList.length; num++) {
     ko.classList.add('expierpop');
     ul.append(ko);
   }
-  imgCont = document.createElement('figure');
+  const imgCont = document.createElement('figure');
   div.appendChild(imgCont);
   imgCont.setAttribute('id', 'imgfigure');
-  
   const img = document.createElement('img');
   imgCont.appendChild(img);
   img.classList.add('popimg');
-  img.setAttribute('src',cardList[num].image);
-  
+  img.setAttribute('src', cardList[num].image);
   const art = document.createElement('article');
   div.append(art);
   art.classList.add('articpop');
   const p = document.createElement('p');
   art.appendChild(p);
   p.innerHTML = cardList[num].text;
-  
   const container = document.createElement('div');
   art.appendChild(container);
-  
   const langList = document.createElement('ul');
   container.appendChild(langList);
-  let lastLangelem = [];
+  const lastLangelem = [];
   for (let i = 1; i <= 6; i += 1) {
-    let li = document.createElement('li');
+    const li = document.createElement('li');
     li.textContent = cardList[num].languages[i];
     langList.append(li);
     li.classList.add('languages');
     lastLangelem.push(li);
   }
-  for (let i=3; i<lastLangelem.length; i += 1) {
+  for (let i = 3; i < lastLangelem.length; i += 1) {
     lastLangelem[i].classList.add('scrow');
   }
   const buttonContainer = document.createElement('div');
   buttonContainer.classList.add('livebuttons');
   container.append(buttonContainer);
-  
   for (let i = 1; i <= 2; i += 1) {
     const button = document.createElement('button');
     button.textContent = cardList[num].links[i];
@@ -102,7 +95,7 @@ for (let num = 0; num < cardList.length; num++) {
   div.appendChild(closeButton);
   closeButton.classList.add('closeButton');
   closeButton.textContent = 'X';
-};
+}
 
 const remPop1 = document.querySelector('#portfolio > div.hidden');
 const remPop2 = document.querySelector('body > section.card.ko > div.hidden');
@@ -123,12 +116,12 @@ const closeFourth = document.querySelector('body > section.card.last > div.hidde
 const hideArr = [closeFirst, closeSecond, closeThird, closeFourth];
 
 function closeFunction(num) {
-  if(remPopArr[num].classList.contains('modal')) {
+  if (remPopArr[num].classList.contains('modal')) {
     remPopArr[num].classList.remove('modal');
   } else {
     remPopArr[num].classList.add('modal');
   }
-};
+}
 
-openButton.forEach((item) => item.addEventListener('click', () => {closeFunction(openButton.indexOf(item))}));
-hideArr.forEach((closb) => closb.addEventListener('click', () => {closeFunction(hideArr.indexOf(closb))}));
+openButton.forEach((item) => item.addEventListener('click', () => { closeFunction(openButton.indexOf(item)); }));
+hideArr.forEach((closb) => closb.addEventListener('click', () => { closeFunction(hideArr.indexOf(closb)); }));

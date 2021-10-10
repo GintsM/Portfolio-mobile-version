@@ -179,6 +179,10 @@ h2 {
   padding-right: 7%;
 }
 
+:any-link {
+  text-decoration: none;
+}
+
 .work :nth-last-child(-n+2) {
   color: #7a869a;
   list-style: disc;
@@ -359,10 +363,6 @@ textarea::placeholder {
   width: 140px;
 }
 
-:any-link {
-  text-decoration: none;
-}
-
 .hidden {
   display: none;
 }
@@ -371,9 +371,7 @@ textarea::placeholder {
   display: block;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
   padding: 3% 4%;
-  margin: auto;
   z-index: 100;
 }
 
@@ -418,8 +416,9 @@ li.expierpop:nth-child(2) {
 
 @media (max-width: 1100px) {
   .articpop {
-    grid-template-columns: 50% auto;  
+    grid-template-columns: 50% auto;
   }
+
 }
 
 .articpop > p:nth-child(1) {
@@ -454,7 +453,7 @@ li.expierpop:nth-child(2) {
   .articpop > p:nth-child(1) {
     grid-row: 1;
   }
-  
+
   .articpop > div:nth-child(2) {
     grid-row: 2;
     width: 100%;
@@ -469,7 +468,6 @@ li.expierpop:nth-child(2) {
 
 .livebuttons {
   margin: 0;
-  margin: 0;
   flex-direction: row;
   width: 100%;
   border-top: 2px solid #f0eaea;
@@ -478,7 +476,8 @@ li.expierpop:nth-child(2) {
 @media (max-width: 1100px) {
   .livebuttons {
     width: 91%;
-  }  
+  }
+
 }
 
 .popbuttons {
@@ -496,5 +495,3 @@ li.expierpop:nth-child(2) {
   top: 3%;
   font-size: 21px;
 }
-
-
