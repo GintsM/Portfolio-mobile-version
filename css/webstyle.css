@@ -125,7 +125,6 @@ h4 {
 }
 
 .card {
-  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 80.0277%;
@@ -372,9 +371,8 @@ textarea::placeholder {
   display: block;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 117%;
+  width: 100%;
   padding: 3% 4%;
-  top: -135px;
   margin: auto;
   z-index: 100;
 }

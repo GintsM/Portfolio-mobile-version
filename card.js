@@ -1,8 +1,8 @@
 function Card (title, expierence, image,) {
   this.title = title;
-  this.expierence=expierence;
-  this.image=image;
-  this.text='Lorem ipsum dolor sit amet, consectetur adipiscing\
+  this.expierence = expierence;
+  this.image = image;
+  this.text = 'Lorem ipsum dolor sit amet, consectetur adipiscing\
     elit, sed do eiusmod tempor incididunt ut labore et dolore \
     magna aliqua. Sem et tortor consequat id porta nibh. Velit \
     aliquet sagittis id consectetur. Urna id volutpat lacus laoreet.\
@@ -10,17 +10,17 @@ function Card (title, expierence, image,) {
     tristique. Egestas diam in arcu cursus euismod quis viverra \
     nibh. Nisl rhoncus mattis rhoncus urna neque. Non tellus orci\
     ac auctor augue mauris augue.'
-  this.languages={
-    1 : 'html',
-    2 : 'css',
-    3 : 'javaScript',
-    4 : 'github',
-    5 : 'ruby',
-    6 : 'Bootstrap'
+  this.languages = {
+    1: 'html',
+    2: 'css',
+    3: 'javaScript',
+    4: 'github',
+    5: 'ruby',
+    6: 'Bootstrap'
   };
-  this.links={
-    1 : 'See Live',
-    2 : 'See Source',
+  this.links = {
+    1: 'See Live',
+    2: 'See Source',
   }
 };
 
@@ -30,29 +30,26 @@ const card3 = new Card('Facebook 360', ['FACEBOOK','Fullstack Dev','2021'],'imag
 const card4 = new Card('UBER NAVIGATION', ['UBER','Lead Developer','2021'],'images/Snap4.png');
 
 const cardList = [card1, card2, card3, card4];
-const selectorList = [ '#portfolio','section.card.ko','section.card.ro', 'section.card.last']
+const selectorList = [ '#portfolio','section.card.ko','section.card.ro', 'section.card.last'];
 
+for (let num = 0; num < cardList.length; num++) {
 
-
-
-for (let num = 0; num < cardList.length; num++){
-
-  const popup1 = document.querySelector(selectorList[num]); 
+  const popup1 = document.querySelector(selectorList[num]);
   
   const modalContainer = document.createElement('div');
   popup1.appendChild(modalContainer);
   modalContainer.classList.add('hidden');
   const div = document.createElement('div');
-  modalContainer.appendChild(div);    
+  modalContainer.appendChild(div);
   div.classList.add('popup');
   
   const h2 = document.createElement('h2');
   div.appendChild(h2);
-  h2.innerHTML=cardList[num].title;
+  h2.innerHTML = cardList[num].title;
   const ul = document.createElement('ul');
   div.appendChild(ul);
   ul.classList.add('work');
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i += 1) {
     const ko = document.createElement('li');
     ko.innerHTML = cardList[num].expierence[i];
     ko.classList.add('expierpop');
@@ -67,34 +64,34 @@ for (let num = 0; num < cardList.length; num++){
   img.classList.add('popimg');
   img.setAttribute('src',cardList[num].image);
   
-  const art = document.createElement('article')
+  const art = document.createElement('article');
   div.append(art);
   art.classList.add('articpop');
   const p = document.createElement('p');
   art.appendChild(p);
-  p.innerHTML=cardList[num].text;
+  p.innerHTML = cardList[num].text;
   
   const container = document.createElement('div');
   art.appendChild(container);
   
   const langList = document.createElement('ul');
   container.appendChild(langList);
-  let lastLangelem = [];    
-  for (let i = 1; i <= 6; i++) {
+  let lastLangelem = [];
+  for (let i = 1; i <= 6; i += 1) {
     let li = document.createElement('li');
     li.textContent = cardList[num].languages[i];
     langList.append(li);
     li.classList.add('languages');
     lastLangelem.push(li);
   }
-  for (let i=3; i<lastLangelem.length; i++) {
+  for (let i=3; i<lastLangelem.length; i += 1) {
     lastLangelem[i].classList.add('scrow');
   }
   const buttonContainer = document.createElement('div');
   buttonContainer.classList.add('livebuttons');
   container.append(buttonContainer);
   
-  for (let i = 1; i <= 2; i++) {
+  for (let i = 1; i <= 2; i += 1) {
     const button = document.createElement('button');
     button.textContent = cardList[num].links[i];
     buttonContainer.append(button);
@@ -104,7 +101,7 @@ for (let num = 0; num < cardList.length; num++){
   const closeButton = document.createElement('span');
   div.appendChild(closeButton);
   closeButton.classList.add('closeButton');
-  closeButton.textContent='X';  
+  closeButton.textContent = 'X';
 };
 
 const remPop1 = document.querySelector('#portfolio > div.hidden');
@@ -119,30 +116,19 @@ const thrButton = document.querySelector('#thirdButton');
 const frthButton = document.querySelector('#fourthButton');
 const openButton = [fiButton, seButton, thrButton, frthButton];
 
-closeFirst = document.querySelector('#portfolio > div.hidden > div > span');
-closeSecond = document.querySelector('body > section.card.ko > div.hidden > div > span');
-closeThird = document.querySelector('body > section.card.ro > div.hidden > div > span');
-closeFourth = document.querySelector('body > section.card.last > div.hidden > div > span');
+const closeFirst = document.querySelector('#portfolio > div.hidden > div > span');
+const closeSecond = document.querySelector('body > section.card.ko > div.hidden > div > span');
+const closeThird = document.querySelector('body > section.card.ro > div.hidden > div > span');
+const closeFourth = document.querySelector('body > section.card.last > div.hidden > div > span');
 const hideArr = [closeFirst, closeSecond, closeThird, closeFourth];
 
-
 function closeFunction(num) {
-  if(remPopArr[num].classList.contains('modal')){
+  if(remPopArr[num].classList.contains('modal')) {
     remPopArr[num].classList.remove('modal');
   } else {
     remPopArr[num].classList.add('modal');
   }
 };
 
-
-fiButton.addEventListener('click', () => {closeFunction(0)});
-closeFirst.addEventListener('click', () => {closeFunction(0)});
-
-seButton.addEventListener('click', () => {closeFunction(1)});
-closeSecond.addEventListener('click', () => {closeFunction(1)});
-
-thrButton.addEventListener('click', () => {closeFunction(2)});
-closeThird.addEventListener('click', () => {closeFunction(2)});
-
-frthButton.addEventListener('click', () => {closeFunction(3)});
-closeFourth.addEventListener('click', () => {closeFunction(3)});
+openButton.forEach((item) => item.addEventListener('click', () => {closeFunction(openButton.indexOf(item))}));
+hideArr.forEach((closb) => closb.addEventListener('click', () => {closeFunction(hideArr.indexOf(closb))}));
