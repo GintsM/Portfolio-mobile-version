@@ -25,7 +25,7 @@ const card4 = new Card('UBER NAVIGATION', ['UBER', 'Lead Developer', '2021'], 'i
 const cardList = [card1, card2, card3, card4];
 const selectorList = ['#portfolio', 'section.card.ko', 'section.card.ro', 'section.card.last'];
 
-for (let num = 0; num < cardList.length; num +=1) {
+for (let num = 0; num < cardList.length; num += 1) {
   const popup1 = document.querySelector(selectorList[num]);
   const modalContainer = document.createElement('div');
   popup1.appendChild(modalContainer);
