@@ -100,6 +100,10 @@ h2 {
   margin-top: -2%;
 }
 
+:visited {
+  color: inherit;
+}
+
 .hideelem :nth-child(2) {
   display: none;
 }
@@ -212,8 +216,4 @@ h5 {
 
 .popbuttons {
   margin: 7% 2% 3% 2%;
-}
-
-:visited {
-  color: inherit;
 }
