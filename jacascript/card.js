@@ -30,6 +30,7 @@ for (let num = 0; num < cardList.length; num += 1) {
   const modalContainer = document.createElement('div');
   popup1.appendChild(modalContainer);
   modalContainer.classList.add('hidden');
+  modalContainer.setAttribute('id', 'posPop'+(num + 1));
   const div = document.createElement('div');
   modalContainer.appendChild(div);
   div.classList.add('popup');
@@ -108,11 +109,7 @@ const closeFourth = document.querySelector('body > section.card.last > div.hidde
 const hideArr = [closeFirst, closeSecond, closeThird, closeFourth];
 
 function closeFunction(num) {
-  if (remPopArr[num].classList.contains('modal')) {
-    remPopArr[num].classList.remove('modal');
-  } else {
-    remPopArr[num].classList.add('modal');
-  }
+    remPopArr[num].classList.toggle('modal');
 }
 
 openButton.forEach((item) => item.addEventListener('click', () => { closeFunction(openButton.indexOf(item)); }));

@@ -377,6 +377,22 @@ textarea::placeholder {
   justify-self: center;
 }
 
+#posPop1{
+  top: 70%;
+}
+
+#posPop2{
+  top: 150%;
+}
+
+#posPop3{
+  top: 216%;
+}
+
+#posPop4{
+  top: 300%;
+}
+
 .popup {
   display: flex;
   width: 90%;
