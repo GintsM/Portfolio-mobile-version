@@ -29,7 +29,7 @@ form.addEventListener('submit', (event) => {
   const emailVal = document.getElementById('email').value;
 
   if (emailVal !== emailVal.toLowerCase()) {
-    event.preventDefault();  
-    warning.innerHTML = 'Please use only lower case characters for email.'; 
+    event.preventDefault();
+    warning.innerHTML = 'Please use only lower case characters for email.';
   }
 });
