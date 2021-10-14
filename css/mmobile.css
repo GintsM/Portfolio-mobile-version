@@ -196,8 +196,13 @@ h5 {
   border-radius: 8px;
 }
 
+.modal {
+  top: -50px;
+}
+
 .popup {
   padding-top: 5%;
+  width: 85%;
 }
 
 .popup > ul:nth-child(2) {
