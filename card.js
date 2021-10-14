@@ -15,6 +15,10 @@ function Card(title, expierence, image) {
     1: 'See Live',
     2: 'See Source',
   };
+  this.href = {
+    1: 'https://gintsm.github.io/Portfolio-mobile-version/',
+    2: 'https://github.com/GintsM/Portfolio-mobile-version',
+  };
 }
 
 const card1 = new Card('Tonic', ['CANOPY', 'Back End Dev', '2021'], 'images/Snap1.png');
@@ -89,23 +93,13 @@ for (let num = 0; num < cardList.length; num += 1) {
   closeButton.textContent = 'X';
 }
 
-const remPop1 = document.querySelector('#portfolio > div.hidden');
-const remPop2 = document.querySelector('body > section.card.ko > div.hidden');
-const remPop3 = document.querySelector('body > section.card.ro > div.hidden');
-const remPop4 = document.querySelector('body > section.card.last > div.hidden');
-const remPopArr = [remPop1, remPop2, remPop3, remPop4];
+const remPopArr = document.querySelectorAll('div.hidden');
 
-const fiButton = document.querySelector('#portfolio > div:nth-child(2) > form:nth-child(5) > button:nth-child(1)');
-const seButton = document.querySelector('section.card:nth-child(4) > div:nth-child(2) > form:nth-child(5) > button:nth-child(1)');
-const thrButton = document.querySelector('#thirdButton');
-const frthButton = document.querySelector('#fourthButton');
-const openButton = [fiButton, seButton, thrButton, frthButton];
+const seeBtn = document.querySelectorAll('form:nth-child(5) > button:nth-child(1)');
+const openButton = Array.from(seeBtn);
 
-const closeFirst = document.querySelector('#portfolio > div.hidden > div > span');
-const closeSecond = document.querySelector('body > section.card.ko > div.hidden > div > span');
-const closeThird = document.querySelector('body > section.card.ro > div.hidden > div > span');
-const closeFourth = document.querySelector('body > section.card.last > div.hidden > div > span');
-const hideArr = [closeFirst, closeSecond, closeThird, closeFourth];
+const clBtn = document.querySelectorAll('div.hidden > div > span');
+const hideArr = Array.from(clBtn);
 
 function closeFunction(num) {
   if (remPopArr[num].classList.contains('modal')) {
@@ -117,3 +111,8 @@ function closeFunction(num) {
 
 openButton.forEach((item) => item.addEventListener('click', () => { closeFunction(openButton.indexOf(item)); }));
 hideArr.forEach((closb) => closb.addEventListener('click', () => { closeFunction(hideArr.indexOf(closb)); }));
+
+const seeLive = document.querySelectorAll('div:nth-child(2) > button:nth-child(1)');
+seeLive.forEach((live) => live.addEventListener('click', () => {window.location = card1.href[1]; }));
+const seeSource = document.querySelectorAll('div:nth-child(2) > button:nth-child(2)');
+seeSource.forEach((source) => source.addEventListener('click', () => {window.location = card1.href[2] }));
