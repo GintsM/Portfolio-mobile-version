@@ -19,3 +19,17 @@ menbt.addEventListener('click', toogleF);
 
 const navitms = document.querySelectorAll('.navitm');
 navitms.forEach((navitm) => (navitm.addEventListener('click', toogleF)));
+
+// Validation for email
+
+const form = document.querySelector('#about > footer > form');
+const warning = document.querySelector('#warning');
+
+form.addEventListener('submit', (event) => {
+  const emailVal = document.getElementById('email').value;
+
+  if (emailVal !== emailVal.toLowerCase()) {
+    event.preventDefault();
+    warning.innerHTML = 'Please use only lower case characters for email.';
+  }
+});

@@ -4,3 +4,5 @@ node_module
 LICENSE
 style.css
 mobile.css
+launch.json
+settings.json
