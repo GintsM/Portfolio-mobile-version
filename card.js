@@ -15,9 +15,9 @@ function Card(title, expierence, image) {
     1: 'See Live',
     2: 'See Source',
   };
-  this.tratatra = {
-    1: 'https://gintsm.github.io/Portfolio-mobile-version/',
-    2: 'https://github.com/GintsM/Portfolio-mobile-version',
+  this.toGo = {
+    live: 'https://gintsm.github.io/Portfolio-mobile-version/',
+    source: 'https://github.com/GintsM/Portfolio-mobile-version',
   };
 }
 
@@ -113,6 +113,6 @@ openButton.forEach((item) => item.addEventListener('click', () => { closeFunctio
 hideArr.forEach((closb) => closb.addEventListener('click', () => { closeFunction(hideArr.indexOf(closb)); }));
 
 const seeLive = document.querySelectorAll('div:nth-child(2) > button:nth-child(1)');
-seeLive.forEach((live) => live.addEventListener('click', () => { window.location = card1.tratatra[1]; }));
+seeLive.forEach((live) => live.addEventListener('click', () => { window.location = card1.toGo.live; }));
 const seeSource = document.querySelectorAll('div:nth-child(2) > button:nth-child(2)');
-seeSource.forEach((source) => source.addEventListener('click', () => { window.location = card1.tratatra[2]; }));
+seeSource.forEach((source) => source.addEventListener('click', () => { window.location = card1.toGo.source; }));
