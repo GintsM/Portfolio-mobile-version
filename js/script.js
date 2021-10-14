@@ -1,24 +1,17 @@
-const hide = document.querySelector('.hide');
-const hamb = document.querySelector('.hamb');
-const close = document.querySelector('.close');
+const hideMenu = document.querySelector('.hide');
+const hambButton = document.querySelector('.hamb');
+const closeElemetn = document.querySelector('.closeScreen');
+const menuLinks = document.querySelectorAll('.hide > li');
 
-function toogleF() {
-  if (hide.classList.contains('showHide')) {
-    hide.classList.remove('showHide');
-    close.style.display = 'none';
-    hamb.style.display = 'block';
-  } else {
-    hide.classList.add('showHide');
-    close.style.display = 'block';
-    hamb.style.display = 'none';
-  }
+function showMenu() {
+  hideMenu.classList.toggle('menu');
+  hambButton.classList.toggle('removeHamb');
+  closeElemetn.classList.toggle('showClose');
 }
 
-const menbt = document.querySelector('.menbtn');
-menbt.addEventListener('click', toogleF);
-
-const navitms = document.querySelectorAll('.navitm');
-navitms.forEach((navitm) => (navitm.addEventListener('click', toogleF)));
+hambButton.addEventListener('click', showMenu);
+closeElemetn.addEventListener('click', showMenu);
+menuLinks.forEach((li) => li.addEventListener('click', showMenu));
 
 // Validation for email
 
