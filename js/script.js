@@ -34,7 +34,10 @@ const contTextArea = document.getElementById('textarea');
 
 function addToLocalStorage() {
   const addToLocalStorageArr = {
-    name: contName.value, mail: contEmail.value, text: contTextArea.value };
+    name: contName.value,
+    mail: contEmail.value,
+    text: contTextArea.value,
+  };
   const contactString = JSON.stringify(addToLocalStorageArr);
   localStorage.setItem('formdata', contactString);
 }
