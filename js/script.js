@@ -33,7 +33,8 @@ const contEmail = emailVal;
 const contTextArea = document.getElementById('textarea');
 
 function addToLocalStorage() {
-  let addToLocalStorageArr = {name: contName.value, mail: contEmail.value, text: contTextArea.value};
+  const addToLocalStorageArr = {
+    name: contName.value, mail: contEmail.value, text: contTextArea.value };
   const contactString = JSON.stringify(addToLocalStorageArr);
   localStorage.setItem('formdata', contactString);
 }
@@ -45,7 +46,7 @@ function setFromLocalStorage() {
   contTextArea.value = getValuesFromStor.text;
 }
 
-if(localStorage.getItem('formdata')) {
+if (localStorage.getItem('formdata')) {
   setFromLocalStorage();
 }
 
