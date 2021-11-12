@@ -15,7 +15,7 @@ function Card(title, expierence, image, text, live, source) {
     1: 'See Live',
     2: 'See Source',
   };
-  this.toGo = {live, source};
+  this.toGo = { live, source };
 }
 
 const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem et tortor consequat id porta nibh. Velit aliquet sagittis id consectetur. Urna id volutpat lacus laoreet. Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Egestas diam in arcu cursus euismod quis viverra nibh. Nisl rhoncus mattis rhoncus urna neque. Non tellus orci ac auctor augue mauris augue.';
